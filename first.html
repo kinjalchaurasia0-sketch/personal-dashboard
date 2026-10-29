@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinjal's personal Dashboard</title>
+    <style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: black;
+        color:antiquewhite;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height:max-content;
+        background-image: url('Wallpaper.jpg'); 
+        background-size: cover;               
+        background-position: center;             
+        background-repeat: no-repeat;            
+        background-attachment: fixed;
+    }
+    nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 32px;
+      background-color:black ; 
+      border-bottom: 1px solid #322b2b;
+    }
+
+    .nav-logo {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color:deeppink;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #b14b96;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: #ffffff;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      width: 100%;
+      max-width: 900px;
+      padding: 40px 20px;
+    }
+
+    /* Google-Style Logo */
+    .logo {
+      font-size: 72px;
+      font-weight: bold;
+      margin-bottom: 24px;
+      user-select: none;
+    }
+    .logo span:nth-child(1) { color: #4285f4; }
+    .logo span:nth-child(2) { color: #ea4335; }
+    .logo span:nth-child(3) { color: #fbbc05; }
+    .logo span:nth-child(4) { color: #4285f4; }
+    .logo span:nth-child(5) { color: #34a853; }
+    .logo span:nth-child(6) { color: #ea4335; }
+
+    /* Search Box & Form */
+    
+    form {
+      width: 100%;
+      max-width: 700px; /* Controls the maximum length of the search bar */
+      margin-bottom: 32px;
+    }
+
+/* 2. Style and size the outer search box container */
+    .search-box {
+      width: 100%;
+      background-color: #1e1e1e;
+      border: 1px solid #322b2b;
+      border-radius: 28px; 
+      padding: 14px 24px;   
+      display: flex;
+      align-items: center;
+    }
+
+    .search-input {
+      width: 100%;
+      border: none;
+      outline: none;
+      background: transparent;
+      color: antiquewhite;
+      font-size: 18px; 
+   
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      width: 100%;
+      
+    }
+
+    .card {
+      background-color:antiquewhite ;
+      border: 1px solid antiquewhite;
+      border-radius: 12px;
+      padding: 20px;
+      transition: border-color 0.2s ease;
+    }
+
+    .card:hover {
+      border-color: #4285f4;
+    }
+
+    .card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+      color:black;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: #d21919;
+      line-height: 1.4;
+    }
+
+    </style>     
+</head>
+<body>
+  <nav>
+    <div class="nav-logo">KINJAL'S Personal Dashboard</div>
+    <ul class="nav-links">
+      <li><a href="https://calendar.google.com" target="_blank">CALENDAR</a></li>
+      <li><a href="https://mail.google.com" target="_blank">GMAIL</a></li>
+      <li><a href="aboutme.html" target="_blank">ABOUT ME </a></li>
+    </ul>
+  </nav>
+  <main>
+    <!-- Logo -->
+    <div class="logo" id="search">
+      <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
+    </div>
+    <form action="https://www.google.com/search"target="_blank" method="GET">
+      <div class="search-box">
+        <input type="text" name="q" class="search-input" placeholder="Search Google or type a URL..." autofocus>
+      </div>
+    </form>
+    <!-- Feature Cards Section -->
+    <div class="cards-grid" id="projects">
+      <div class="card">
+        <h3>🚀 quote of the day</h3>
+        <p>stay positive and live a happy life.</p>
+      </div>
+      <div class="card">
+        <h3>⚡ Quick Links</h3>
+        <p>Instant shortcuts to my daily tools, documentation, and favorite learning resources.</p>
+      </div>
+      <div class="card">
+        <h3>🎯 Current Goal</h3>
+        <p>Mastering modern CSS layouts, Flexbox, Grid, and responsive design techniques.</p>
+      </div>
+    </div>
+  </main>
+
+
